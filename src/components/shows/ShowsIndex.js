@@ -1,7 +1,8 @@
 import React from "react";
-
+import error from "../common/Error.js";
 // Helper functions
 import { getAllShows } from "../../api/fetch";
+import ShowListing from "./ShowListing";
 
 class ShowsIndex extends React.Component {
   constructor(props) {
