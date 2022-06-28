@@ -1,7 +1,7 @@
 import React from "react";
 import Movies from "./Movies"
 import MovieListing from "./MovieListing"
-// // Helper functions
+
 import { getAllMovies, deleteMovie } from "../../api/fetch";
 import { Switch, Route, withRouter } from "react-router-dom";
 
@@ -35,7 +35,7 @@ class MoviesIndex extends React.Component {
         this.setState({
           movies: updatedMovies,
         });
-        //navigate("/movies") is new way
+
         this.props.history.push("/movies");
       });
     } catch (err) {
