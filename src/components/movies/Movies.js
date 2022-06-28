@@ -1,7 +1,6 @@
 import React from 'react'
 import { useParams, useHistory } from 'react-router-dom'
 import Error from "../common/Error"
-import "../movies/Movie.css"
 
 export default function Movie({movies, handleDelete}) {
     const {id} = useParams()

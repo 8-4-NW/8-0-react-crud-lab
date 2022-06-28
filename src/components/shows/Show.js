@@ -1,5 +1,5 @@
 import { useParams,useHistory } from "react-router-dom";
-import ErrorMessage from "../common/ErrorMessage";
+import Error from "../common/Error";
 
 const Show = ({ shows, handleDelete }) => {
 
@@ -11,7 +11,7 @@ const Show = ({ shows, handleDelete }) => {
         history.push("/shows")
     }
     if(!show){ 
-    return <ErrorMessage/> }
+    return <Error/> }
     return(
         <section class="shows-show-wrapper">
         <h2>{show.title}</h2>

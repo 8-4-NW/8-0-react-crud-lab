@@ -1,5 +1,5 @@
 import React from "react";
-import Movie from "../movies/Movie";
+import Movies from "../movies/Movies";
 import MovieListing from "../movies/MovieListing";
 // Helper functions
 import { getAllMovies, deleteMovie } from "../../api/fetch";
@@ -47,7 +47,7 @@ class MoviesIndex extends React.Component {
     return (
       <Switch>
         <Route path="/movies/:id">
-          <Movie movies={this.state.movies} handleDelete={this.handleDelete} />
+          <Movies movies={this.state.movies} handleDelete={this.handleDelete} />
         </Route>
         <section className="movies-index-wrapper">
           <h2>All Movies</h2>

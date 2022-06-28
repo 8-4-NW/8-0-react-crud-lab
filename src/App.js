@@ -3,6 +3,9 @@ import Home from "./components/home/Home";
 import ShowsIndex from "./components/shows/ShowsIndex";
 import MoviesIndex from "./components/movies/MoviesIndex";
 import Footer from "./components/common/Footer";
+import { Switch, Route } from "react-router-dom";
+
+
 const App = () => (
   <div className="wrapper">
     <Nav />
