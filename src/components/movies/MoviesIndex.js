@@ -1,7 +1,7 @@
 import React from "react";
-import Movies from "../movies/Movies";
-import MovieListing from "../movies/MovieListing";
-// Helper functions
+import Movies from "./Movies"
+import MovieListing from "./MovieListing"
+// // Helper functions
 import { getAllMovies, deleteMovie } from "../../api/fetch";
 import { Switch, Route, withRouter } from "react-router-dom";
 
@@ -63,3 +63,4 @@ class MoviesIndex extends React.Component {
 }
 
 export default withRouter(MoviesIndex);
+ 

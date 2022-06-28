@@ -8,9 +8,10 @@ import { Switch, Route } from "react-router-dom";
 
 const App = () => (
   <div className="wrapper">
+  
     <Nav />
     <Switch>
-      <Route exact path="/">
+      <Route  exact path="/">
         <Home />
       </Route>
       <Route path="/shows">
@@ -21,6 +22,7 @@ const App = () => (
       </Route>
     </Switch>
     <Footer />
+    
   </div>
 );
 
